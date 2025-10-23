@@ -56,7 +56,7 @@ Displays recent system logs (last 1 hour) with errors, failures, or critical eve
 ## Usage
 - Clone the repository:
 ```bash
-git clone https://github.com/<your-username>/system-health-check.git
+git clone https://github.com/anishkumarait/system-health-check.git
 cd system-health-check
 ```
 
