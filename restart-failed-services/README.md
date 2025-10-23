@@ -2,6 +2,10 @@
 
 **Detect and automatically restart failed `systemd` (Linux) and `launchd` (macOS) services.**
 
+![Bash](https://img.shields.io/badge/Bash-Script-blue?logo=gnu-bash)
+[![License](https://img.shields.io/badge/license-MIT-green)](../LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS-blue)](https://github.com/anishkumarait/bash-devops-automation-suite/tree/main/system-health-check)
+
 ---
 
 ## Overview
