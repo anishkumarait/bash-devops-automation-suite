@@ -1,7 +1,8 @@
 # System Health Check Script
 
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS-blue)](https://github.com/<your-username>/system-health-check)
+![Bash](https://img.shields.io/badge/Bash-Script-blue?logo=gnu-bash)
+[![License](https://img.shields.io/badge/license-MIT-green)](../LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS-blue)](https://github.com/anishkumarait/bash-devops-automation-suite/tree/main/system-health-check)
 
 A **cross-platform system health check script** for **DevOps, SREs, and Cloud engineers**. Provides a **quick overview of system health**, including CPU, memory, disk, network utilization, running processes, services, and recent system logs. Fully **non-blocking**, color-coded, and safe for production use.
 
