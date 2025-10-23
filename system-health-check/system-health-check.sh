@@ -187,7 +187,7 @@ main() {
     check_processes
     check_network
     check_services
-    # check_logs
+    check_logs
     summarize_report
 }
 
