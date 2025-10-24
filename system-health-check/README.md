@@ -54,66 +54,70 @@ Lists running services.
 ### `check_logs()`
 Displays recent system logs (last 1 hour) with errors, failures, or critical events.
 
+---
+
 ## Usage
 - Clone the repository:
-```bash
-git clone https://github.com/anishkumarait/system-health-check.git
-cd system-health-check
-```
+  ```bash
+  git clone https://github.com/anishkumarait/system-health-check.git
+  cd system-health-check
+  ```
 
 - Make the script executable:
-```bash
-chmod +x system-health-check.sh
-```
+  ```bash
+  chmod +x system-health-check.sh
+  ```
 
 - Run the script:
-```bash
-# Non-root (basic info)
-./system-health-check.sh
+  ```bash
+  # Non-root (basic info)
+  ./system-health-check.sh
 
-# Root (full network and process info)
-sudo ./system-health-check.sh
-```
+  # Root (full network and process info)
+  sudo ./system-health-check.sh
+  ```
+
+---
 
 ## Sample Output
-```bash
--- System Uptime --
-up 3 days, 4 hours, 22 minutes
-Load Average: 0.15 0.10 0.05
+  ```bash
+  -- System Uptime --
+  up 3 days, 4 hours, 22 minutes
+  Load Average: 0.15 0.10 0.05
+  
+  -- CPU Usage --
+  CPU Usage: 12%
 
--- CPU Usage --
-CPU Usage: 12%
+  -- Memory Usage --
+  Total: 16GB
+  Used: 8.5GB
+  Free: 7.5GB
+  Swap Used: 1GB
 
--- Memory Usage --
-Total: 16GB
-Used: 8.5GB
-Free: 7.5GB
-Swap Used: 1GB
+  -- Disk Usage --
+  Filesystem      Size  Used Avail Use% Mounted on
+  /dev/sda1       100G   70G   30G  70% /
+  
+  -- Network Stats and Open Ports --
+  Network Utilization:
+  Interface: eth0  RX: 12345678  TX: 9876543
 
--- Disk Usage --
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1       100G   70G   30G  70% /
+  Currently Used Ports:
+  TCP PORT: 22     STATE: 01
+  UDP PORT: 12345
+  
+  Total Established TCP Connections: 5
 
--- Network Stats and Open Ports --
-Network Utilization:
-Interface: eth0  RX: 12345678  TX: 9876543
-
-Currently Used Ports:
-TCP PORT: 22     STATE: 01
-UDP PORT: 12345
-
-Total Established TCP Connections: 5
-
--- Top 10 Memory-Consuming Processes --
-PID    PPID   CMD               %MEM %CPU
-1234   1      java              12.5 30.0
-5678   1      python3           8.0  10.0
-
--- Running Services --
-nginx.service                             running
-ssh.service                               running
-
--- System Logs with Errors (Last 1 Hour) --
-Feb 23 10:15:32 server sshd[1234]: Failed password for root from 192.168.1.1
-No anomalies found in messages log.
-```
+  -- Top 10 Memory-Consuming Processes --
+  PID    PPID   CMD               %MEM %CPU
+  1234   1      java              12.5 30.0
+  5678   1      python3           8.0  10.0
+  
+  -- Running Services --
+  nginx.service                             running
+  ssh.service                               running
+  
+  -- System Logs with Errors (Last 1 Hour) --
+  Feb 23 10:15:32 server sshd[1234]: Failed password for root from 192.168.1.1
+  No anomalies found in messages log.
+  ```
